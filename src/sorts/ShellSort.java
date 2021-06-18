@@ -29,7 +29,7 @@ public class ShellSort extends SortAlgorithm {
     }
   }
 
-  // generiert eine absteigende Sequenz aller 3-glatten Zahlen kleiner als n
+  // generates a descending sequence of all 3-smooth numbers that are smaller than n
   private static List<Integer> generateIncrementSequence(int n) {
     List<Integer> sequence = new ArrayList<>();
     sequence.add(1);

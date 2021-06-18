@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class OrderableProfile implements Orderable {
   public int key; // key that defines position within sorted order
-  // dummy-data so that orderable.OrderableProfile carries more information than just the sorting-key
+  // dummy-data so that OrderableProfile carries more information than just the sorting-key
   // and is thus closer to a real domain class
   public String firstname;
   public String lastname;
@@ -47,8 +47,8 @@ public class OrderableProfile implements Orderable {
     return this;
   }
 
-  // Gibt die Ziffer für eine bestimmte Stelle in key zurück.
-  // Die gewünschte Stelle wird mit position spezifiziert, wobei die Einerstelle position = 0 entspricht
+  // returns a single decimal-digit from key
+  // the desired position is specified via position, with 0 referring to the first digit
   public int digit(int position) {
     return (key / (int) Math.pow(10, position)) % 10;
   }

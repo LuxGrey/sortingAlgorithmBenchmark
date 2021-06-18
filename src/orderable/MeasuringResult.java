@@ -1,7 +1,7 @@
 package orderable;
 
 public class MeasuringResult {
-  private long measuredTime; // in Millisekunden
+  private long measuredTime; // in milliseconds
   private int measurements;
   private int sortedDataAmount;
   private int keyRange;

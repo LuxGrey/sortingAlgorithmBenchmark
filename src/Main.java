@@ -52,7 +52,7 @@ public class Main {
   }
 
   private static void initialiseMap() {
-    // ergänze um RadixSortWithLengthDiscovery
+    // add RadixSortWithDiscovery
     String[] sortsExtended = new String[SORTS.length + 1];
     System.arraycopy(SORTS, 0, sortsExtended, 0, SORTS.length);
     sortsExtended[sortsExtended.length - 1] = SPECIAL_RADIX_SORT;
@@ -135,7 +135,7 @@ public class Main {
   private static boolean verify(Orderable[] dataToVerify) {
     for (int i = 1; i < dataToVerify.length; i++) {
       if (dataToVerify[i].less(dataToVerify[i - 1])) {
-        return false; // nicht sortiert
+        return false; // not sorted
       }
     }
 

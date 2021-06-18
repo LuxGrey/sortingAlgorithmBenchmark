@@ -36,8 +36,7 @@ public class RadixSort extends SortAlgorithm {
     }
   }
 
-  // findet die Schlüssellänge die Elemente in dem übergebenen Array
-  // basierend auf der größten auftretenden Anzahl von Dezimalstellen in den Schlüsseln
+  // determines greatest occurring key-length (number of decimal-digits) among elements in A
   public static int findKeyLength(OrderableProfile[] A) {
     int longest = 0, currentLength = 0;
 

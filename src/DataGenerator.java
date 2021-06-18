@@ -3,15 +3,15 @@ import java.util.Random;
 import orderable.OrderableProfile;
 
 public class DataGenerator {
-  // Random-Instanz mit aktuellem Zeitpunkt als seed
+  // Random-instance with current time as seed
   private static final Random generator = new Random(new Date().getTime());
-  private static final int strLeftLimit = 97; // Buchstabe 'a'
-  private static final int strRightLimit = 122; // Buchstabe 'z'
+  private static final int strLeftLimit = 97; // letter 'a'
+  private static final int strRightLimit = 122; // letter 'z'
 
-  // generiert ein Array von OrderableProfile mit zufälligen Werten
-  // Anzahl an Objekten wird durch size bestimmt
-  // Wertebereich von key wird durch keyLowerBound und keyUpperBound eingeschränkt
-  // das nullte Element in der Liste hat automatisch den minimalen key-Wert
+  // generates an Array of OrderableProfile with random values
+  // number of objects is determined by size
+  // value-range of key is determined by keyLowerBound and keyUpperBound
+  // the 0-th element within the list will automatically have the minimum key-value
   public static OrderableProfile[] generateTestData(int size, int keyLowerBound, int keyUpperBound) {
     OrderableProfile[] testData = new OrderableProfile[size];
 
