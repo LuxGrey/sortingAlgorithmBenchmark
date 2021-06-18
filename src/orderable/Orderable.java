@@ -1,5 +1,6 @@
 package orderable;
 
+// replicated from Ottman, Widmayer, 2017, page 159
 public interface Orderable {
 
   public boolean equal(Orderable o);

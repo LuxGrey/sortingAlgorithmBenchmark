@@ -7,6 +7,7 @@ import orderable.Orderable;
 
 public class ShellSort extends SortAlgorithm {
 
+  // based on Ottman, Widmayer, 2017, pages 88 - 89
   public static void sort(Orderable A[]) {
     List<Integer> sequence = generateIncrementSequence(A.length);
     int h, i, j, s;
@@ -29,6 +30,7 @@ public class ShellSort extends SortAlgorithm {
     }
   }
 
+  // based on StackOverflow-answer at https://stackoverflow.com/a/25344494/10764995
   // generates a descending sequence of all 3-smooth numbers that are smaller than n
   private static List<Integer> generateIncrementSequence(int n) {
     List<Integer> sequence = new ArrayList<>();

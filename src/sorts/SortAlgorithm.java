@@ -2,6 +2,7 @@ package sorts;
 
 import orderable.Orderable;
 
+// replicated from Ottman, Widmayer, 2017, page 159
 public abstract class SortAlgorithm {
 
   public static void swap(Object A[], int i, int j) {

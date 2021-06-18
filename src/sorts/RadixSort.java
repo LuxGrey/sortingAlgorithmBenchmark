@@ -7,6 +7,7 @@ public class RadixSort extends SortAlgorithm {
   public static int l;
   private static final int m = 10;
 
+  // based on Ottman, Widmayer, 2017, pages 125 - 126
   // make sure that l is set before calling
   public static void sort(OrderableProfile[] A) {
     OrderableProfile[] b = new OrderableProfile[A.length];

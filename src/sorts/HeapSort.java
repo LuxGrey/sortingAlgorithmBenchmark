@@ -4,6 +4,7 @@ import orderable.Orderable;
 
 public class HeapSort extends SortAlgorithm {
 
+  // based on Ottman, Widmayer, 2017, page 111
   public static void sort(Orderable A[]) {
     int i;
     for (i = (A.length - 1) / 2; i >= 1; i--) {
@@ -15,6 +16,7 @@ public class HeapSort extends SortAlgorithm {
     }
   }
 
+  // based on Ottman, Widmayer, 2017, page 110
   private static void heapSortHelper(Orderable A[], int i, int m) {
     int j;
     while (2 * i <= m) {

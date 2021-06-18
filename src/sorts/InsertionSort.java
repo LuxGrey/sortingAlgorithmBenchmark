@@ -2,6 +2,7 @@ package sorts;
 
 import orderable.Orderable;
 
+// based on Ottman, Widmayer, 2017, page 159 - 160
 public class InsertionSort extends SortAlgorithm {
 
   public static void sort(Orderable A[]) {
